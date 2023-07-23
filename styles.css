@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Eklendi */
+    width: 40%;
+    z-index: 1; /* Eklendi */
+}
+
+h1 {
+    color: #4285F4;
+}
+
+.timer {
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #d0d0d0;
+    cursor: not-allowed;
+}
+
+.popup {
+    display: none;
+    background-image: linear-gradient(to bottom right, #ff4d4d, #ff1a1a);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 10%;
+    width: 40%;
+    position: absolute; /* Değiştirildi */
+    top: 50%; /* Yenisi eklendi */
+    left: 50%; /* Yenisi eklendi */
+    transform: translate(-50%, -50%); /* Yenisi eklendi */
+    z-index: 2; /* Eklendi */
+}
+
+.popup-content {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.close-btn {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.close-btn:hover {
+    color: #e0e0e0;
+}
